@@ -1,0 +1,7 @@
+
+= simple_form_for @job do |f|
+  =f.input :title, label: "Job Title", class: 'form-control'
+  =f.input :description, label: "Job Description", class: 'form-control'
+  =f.input :company
+  =f.input :url
+  =f.button :submit

@@ -1,0 +1,8 @@
+
+%h2=@job.title
+%p=@job.description
+%p=@job.company
+%p=link_to "Go To Job", @job.url
+=link_to "Home", root_path, class: "btn btn-primary"
+=link_to "Edit", edit_job_path(@job), class: "btn btn-primary"
+=link_to "Delete", job_path, method: :destroy, class: "btn btn-primary"
