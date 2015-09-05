@@ -1,5 +1,7 @@
 
 = simple_form_for @job do |f|
+  = f.collection_select :category_id, Category.all, :id, :name, {promt: "Choose a category" }, input_html: { class: "dropdown-toggle" }
+	
   =f.input :title, label: "Job Title", class: 'form-control'
   =f.input :description, label: "Job Description", class: 'form-control'
   =f.input :company
